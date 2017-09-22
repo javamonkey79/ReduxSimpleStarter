@@ -3,10 +3,8 @@ import {SubmissionError} from 'redux-form';
 
 export const FETCH_STOCK = 'FETCH_STOCK';
 
-const API_KEY = 'SMOFPFR1SLKY3BXH'
-// const API_KEY = '9ECHBXC1QW0LW4SF';
+const API_KEY = ''
 const ROOT_URL = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY';
-// const ROOT_URL = 'https://qjml60b3v4.execute-api.us-east-1.amazonaws.com/prod/stock?foo=bar'
 
 axios.interceptors.request.use(request => {
     console.time("fetchStock");
